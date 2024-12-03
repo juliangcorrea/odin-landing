@@ -1,0 +1,48 @@
+/* Simple CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.15; /* Improve readability */
+}
+
+body {
+    font-family: sans-serif; /* Set a default font */
+}
+
+/* Remove list styles */
+ol, ul {
+    list-style: none;
+}
+
+/* Remove quotes from blockquotes and quotes */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+}
+
+/* Collapse borders in tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.main-container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero & footer{
+    background-color: #1f2937;
+    font-family: "Roboto", sans-serif;
+}
