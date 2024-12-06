@@ -36,13 +36,123 @@ table {
     border-spacing: 0;
 }
 
+*{
+    overflow-x: hidden;
+}
+
+/* Main styles */
+
 .main-container{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
     height: 100vh;
     width: 100vw;
 }
 
-.hero & footer{
+.main-container:first-child, footer{
     background-color: #1f2937;
+    color: #f9faf8;
     font-family: "Roboto", sans-serif;
 }
+
+.section{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Hero page main styles */
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hero h1{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero p, .hero a{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+/* Hero Nav styles */
+
+.hero-nav{
+    display: flex;
+    height: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-nav h1{
+    width: max-content;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-nav a{
+    text-decoration: none;
+}
+
+/* Main hero page content styles */
+
+.hero-page{
+    display: flex;
+    height: 100%;
+}
+
+.mid-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.mid-container *{
+    width: 90%;
+    padding: 1% 0;
+}
+
+.mid-container button{
+    width: 25%;
+    color: #f9faf8;
+    font-size: 17.5px;
+    font-weight: bolder;
+    background-color: #3882f6;
+    border-style: none;
+    border-radius: 8px;
+    padding: 1% 0;
+}
+
+.img-holder{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    height: 40%;
+}
+
+.img-holder p{
+    text-align: center;
+}
+
+/* Section two styles */
+
