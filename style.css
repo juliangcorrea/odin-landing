@@ -38,6 +38,7 @@ table {
 
 *{
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Main styles */
@@ -54,7 +55,6 @@ table {
 .main-container:first-child, footer{
     background-color: #1f2937;
     color: #f9faf8;
-    font-family: "Roboto", sans-serif;
 }
 
 .section{
@@ -156,3 +156,50 @@ table {
 
 /* Section two styles */
 
+.title-info{
+    display: flex;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.title-info p{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.content-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.info-box p{
+    width: 150px;
+    margin: 5%;
+    color: rgb(71, 71, 71);
+}
+
+.square{
+    height: 150px;
+    width: 150px;
+    border: 4px solid #3882f6;
+    border-radius: 10px;
+}
